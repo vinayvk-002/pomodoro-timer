@@ -6,6 +6,19 @@ const timerEl = document.getElementById("timer");
 let interval;
 let timeLeft = 1500;
 
+const customMinutesEl = document.getElementById("customMinutes");
+const setCustomEl = document.getElementById("setCustom");
+
+setCustomEl.addEventListener("click", () => {
+  let minutes = parseInt(customMinutesEl.value);
+  if (!isNaN(minutes) && minutes > 0) {
+    timeLeft = minutes * 60;
+    updateTimer();
+  } else {
+    alert("Please enter a valid number of minutes.");
+  }
+});
+
 function updateTimer() {
   let minutes = Math.floor(timeLeft / 60);
   let seconds = timeLeft % 60;
