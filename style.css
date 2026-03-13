@@ -4,7 +4,13 @@
   text-align: center;
   padding: 20px;
   font-family: "Roboto", sans-serif;
+  
 }
+
+body {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
 
 .title {
   font-size: 36px;
@@ -14,8 +20,25 @@
 
 .timer {
   font-size: 72px;
-  color: #2c3e50;
+  color: #29429e;
 }
+
+.custom-time {
+  margin: 15px 0;
+}
+
+.custom-time input {
+  padding: 8px;
+  font-size: 16px;
+  width: 120px;
+  text-align: center;
+  border: none;
+}
+
+.custom-time button {
+  background-color: #2980b9;
+}
+
 
 button {
   font-size: 18px;
